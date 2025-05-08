@@ -68,7 +68,15 @@ Travel Planner is a fully functioning MERN application with a clean, efficient u
 - Byrcpt
 - Json Web Token
 
+##### Contributors
 
+- [Andrea Mac](https://github.com/Invogue01)
+- [Corey Johns](https://github.com/Corey96)
+- [Dylan Allison](https://github.com/DBAX7)
+- [Julia Gray](https://github.com/jgray33)
+- [Oliver Drew](https://github.com/oli-drew)
+- [Sanyiah](https://github.com/san098765432)
+- [Zain Abidin](https://github.com/zainuabidin)
 
 
 
