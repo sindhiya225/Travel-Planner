@@ -1,74 +1,102 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 # Travel Planner
 
-A webisite that allows the user to collate all their travel plans and recommendations in one place.
+A web application that allows users to organize their travel plans, explore nearby places, and manage trips efficiently.
 
+<img width="1896" height="859" alt="Screenshot 2025-11-28 124534" src="https://github.com/user-attachments/assets/0924d8cb-98ba-482a-8798-3987d5e4d86d" />
 
+## Table of Contents
+* Description
+* Features
+* Technologies Used
+* Installation
+* Usage
+* API Keys
+* Contributors
 
 ## Description
+Planning a trip can be overwhelming with so many options and recommendations. Travel Planner helps you organize your trips, add plans, explore nearby places, and keep track of important details in one place. Whether it's a restaurant recommendation or a must-visit tourist spot, this app ensures you never miss out.
 
-When you're planning a big trip and start researching where to go and what to do, it soon becomes apparent that there are so many options. And what about when you're at a party and the host's friend's boss' wife recommends that you go to a really great place to eat in a tiny village that you desperately want to remember. This travel planner replaces endless post-it notes, scribbles on the back of receipts and scrwals on the back of your hand that are bound to go a-miss.
+## Features
+* **User Authentication**: Sign up, log in, and manage your profile securely.
+* **Trip Management**: Create, edit, and delete trips with details like name, description, location, and dates.
+* **Plan Categories**: Add plans categorized as "Eat", "Visit", or "Activity".
+* **Explore Nearby Places**: Use Google Maps and Geoapify APIs to find nearby restaurants, hotels, and attractions.
+* **Fact Management**: Add interesting facts or notes to your trips.
+* **Image Uploads**: Upload and manage images for your trips.
+* **Downloadable Travel Manual**: Export a list of nearby places as a text file.
+* **Responsive Design**: Optimized for both desktop and mobile devices.
 
-Create your own profile and build a trip where you can collate all your plans for places to go to eat, visit, activities to do and facts you want to remember. 
+## Technologies Used
+### Frontend:
+* **React.js**: For building the user interface.
+* **React Router**: For client-side routing.
+* **Apollo Client**: For interacting with the GraphQL API.
+* **Bootstrap**: For responsive design and styling.
+* **Day.js**: For date manipulation.
+* **React Modal**: For modal dialogs.
+* **Validator.js**: For form validation.
+* **Google Maps API**: For map rendering and geolocation.
+* **Geoapify API**: For fetching nearby places.
 
-## Walk through
+### Backend:
+* **Node.js**: For the server runtime environment.
+* **Express.js**: For building the server and handling routes.
+* **Apollo Server**: For creating the GraphQL API.
+* **GraphQL**: For API queries and mutations.
+* **MongoDB**: As the database.
+* **Mongoose**: For database modeling.
+* **Bcrypt**: For password hashing.
+* **JSON Web Token (JWT)**: For authentication.
+* **Dotenv**: For managing environment variables.
 
-### **Start by creating a new account** 
+### Deployment:
+* **Heroku**: For deploying the application.
 
+## Installation
 
-![tp-login](https://user-images.githubusercontent.com/95051960/175242947-984d7c3f-9847-440c-8e3b-66c0adbf0649.gif)
+```bash
+# Clone the repository
+git clone https://github.com/Shyam-GK/travel-planner.git
 
+# Navigate to the project directory
+cd travel-planner
 
+# Install dependencies for server
+npm install
 
-### **Add a new trip**
+# Navigate to the client directory
+cd client
 
-Don't worry if you make a mistake, you can edit these easily
+# Install dependencies for client
+npm install
 
+# Return to the main directory
+cd ..
+```
 
-![tp-create-trip](https://user-images.githubusercontent.com/95051960/175243248-1c509a0a-ddfb-458a-af88-24dc1076a4a3.gif)
+## Usage
 
-### **Add plans to your trip**
+```bash
+# Run the server and client concurrently
+npm run develop
 
-Create as many plans as you'd like! If you make a mistake, easily edit and update. 
+# Just the server
+npm run server
 
-![tp-add-plan](https://user-images.githubusercontent.com/95051960/175244060-af75859f-4f9a-472c-8d3d-62a744550315.gif)
+# Just the client
+npm run client
+```
 
-### **Add facts to your trip** 
+## API Keys
+This application requires the following API keys:
+* Google Maps API key
+* Geoapify API key
 
+Create a `.env` file in the root directory with the following variables:
 
-![tp-add-fact](https://user-images.githubusercontent.com/95051960/175244298-e0ed29d7-9576-4e8b-b36f-10cb3d92bd2b.gif)
-
-
-### **Travel planner will organise your trips to previous trips and upcoming**
-
-
-![tp-organise](https://user-images.githubusercontent.com/95051960/175244742-019c58e8-198a-4cba-849f-bbdd15f9796a.gif)
-
-
-## Execution 
-
-Travel Planner is a fully functioning MERN application with a clean, efficient user interface successfully deployed with heroku using back end and front end technologies:
-
-
-- React.js
-- JSX
-- CSS
-- Bootstap
-- React Modal
-- Day.js
-- Node.js
-- Express
-- Apollo
-- GraphQl
-- MongoDB
-- Mongoose
-- Day.js
-- Validator
-- Byrcpt
-- Json Web Token
-
-
-
-
-
+```
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+GEOAPIFY_API_KEY=your_geoapify_api_key
+```
