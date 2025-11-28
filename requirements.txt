@@ -1,0 +1,31 @@
+Flask==3.0.3
+flask-cors==5.0.1
+python-dotenv==1.0.1
+bcrypt==4.3.0
+requests==2.32.3
+validators==0.34.0
+
+
+Frontend (React)
+npm install react react-dom react-scripts react-router-dom
+npm install @apollo/client graphql
+npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+npm install bootstrap
+npm install dayjs
+npm install validator
+npm install react-modal
+npm install react-dropzone
+npm install react-toastify
+npm install react-icons
+
+
+Backend (Node.js)
+npm install express cors dotenv bcryptjs jsonwebtoken mongoose multer sharp
+npm install express-validator  
+npm install express apollo-server-express graphql mongoose
+npm install bcrypt jsonwebtoken dotenv cors
+npm install graphql-upload
+
+
+Development Tools
+npm install --save-dev nodemon concurrently
